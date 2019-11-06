@@ -7,7 +7,10 @@ Before this project begins, I would like to search some of the approaches I have
 	The model might take in the frame rate and length of the desired clip as parameters or will do one frame at a time and have the program loop through the model until all frames are done.
 	Going back to the first point, the model might have to be a CNN-RNN hybrid.
 	The Sliding Windows method may be replaced but I do not know about that yet. I've heard rumours about other methods but have never found any online. More research must be done.
-	The pictures most be outputed as a video. More research must be done on this conversion. 
+	The pictures must be outputed as a video. More research must be done on this conversion. 
+	Mynn is the module used, I am unfamiliar with pytorch, and tensorflow
+	The adam optimizer will be used for its reliabity in terms of computation accuracy of meeting minimum and speed.
+	ReLu is used because there is no vanishing gradient and it has a 6 times higher convergent rate than tanh (https://towardsdatascience.com/activation-functions-and-its-types-which-is-better-a9a5310cc8f) 
 	The data set might use one single video and have the program go through snipets at a time. This might lead to overfitting, the recorded effect will be document (if I remember).
 	A container will be made to hold all the files or be in a simple folder.
 
@@ -20,4 +23,5 @@ Future Plan
 	I might write a research paper on this.
 	I might incorporate audio with it. If I do, one approach is to have the audio split perfectly with it's frame.
 	I might add the genre of the clip to make more specialized models.
+	I might change the optimizer
 	I might make another project like this but instead with music.
